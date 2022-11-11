@@ -37,6 +37,11 @@ body {
     font-size: 1.5em;
 }
 
+.mainArticle {
+    background-color: rgb(57, 115, 192);
+    padding: 100px;
+}
+
 /**For size reshape so it doesn't look horrible*/
 @media screen and (max-width: 840px) {
     .intro {

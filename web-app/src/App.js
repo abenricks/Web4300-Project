@@ -1,4 +1,6 @@
-import logo from './logo.svg';
+import mainImg from './images/bulldog.jpg';
+import React from 'react';
+import {BrowserRouter as Router, Link} from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -14,12 +16,24 @@ function App() {
         <div class="menuItem">Item3ex</div>
     </div>
 
-    {/*Intro banner and text abt the site*/}
+    {/*Intro banner and text about the site. With current img text looks funky but we can change this*/}
     <div class="intro">
-        Etc etc intro...
+
     </div>
 
-    <div id="topArticle"></div>
+    <div id="topArticle">
+    <div class="mainArticle">
+            Main summary and Description with link for more info. The image is also a clickable route.
+            <Router>
+            <div class="mainImg">
+                <Link to="/test">
+                    <img src={mainImg} alt="Bulldawg" id="img1"/>
+                </Link>
+            </div>
+            </Router>
+            </div>,
+
+    </div>
     </div>
   );
 }

@@ -26,6 +26,34 @@
         Etc etc intro...
     </div>
 
-<script type="text/babel"></script>
+    <div id="topArticle"></div>
+
+<script type="text/babel">
+    function MainArtic() {
+        return (
+            <div class="mainArticle">
+            Main summary and Description with link for more info
+            </div>,
+            <Router>
+            <div class="mainImg">
+                <Link to="/test">
+                    <img src="/images/bulldog.jpg" alt="Bulldawg"/>
+                </Link>
+            </div>
+            </Router>
+        );
+    }
+
+    const App = () => (
+        <React.Fragment>
+        <MainArtic />
+        </React.Fragment>
+    )
+
+    ReactDOM.render(
+        <App />,
+        document.getElementById("topArticle")
+    );
+</script>
 </body>
 </html>
