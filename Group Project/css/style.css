@@ -30,7 +30,7 @@ body {
     background-image:url(""); 
     background-repeat: no-repeat;
     object-fit: cover;
-    background-color: rgb(236, 113, 113); /**Delete later*/
+    background-color: rgb(223, 101, 101); /**Delete later*/
     width: 100%;
     height: 250px;
     font-size: 1.5em;
