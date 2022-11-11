@@ -5,5 +5,5 @@ Names:
 
 ADD MORE**
 
-Single Page App (SPA) using React functions and components. Web page designed as a blog for UGA
+Single Page App (SPA) using React functions and components. Web page designed as a blog for UGA football
 

@@ -26,14 +26,20 @@ body {
     margin: 10px;
 }
 
-.intro { /**Needs image for banner or something you want as main banner. Also not sure if this is the right code for bg img (sorry)*/
-    background-image:url(""); 
+.intro { /**Needs image for banner or something you want as main banner. I put this img here for now. feel free to change it*/
+    background-image:url("../images/gaexample.png"); 
     background-repeat: no-repeat;
+    background-position: 50%;
     object-fit: cover;
-    background-color: rgb(223, 101, 101); /**Delete later*/
+    background-color: rgb(187, 62, 62); /**Delete later*/
     width: 100%;
     height: 250px;
     font-size: 1.5em;
 }
 
-
+/**For size reshape so it doesn't look horrible*/
+@media screen and (max-width: 840px) {
+    .intro {
+        background-size: 80%;
+    }
+  }
