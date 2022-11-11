@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+
+/** Webpage title of site above menu flexbox*/
+.menuTitle {
+  padding-top: 10px;
+  text-align: center;
+  background-color: rgb(99, 99, 99);
+  font-size: large;
+  color: white;
+
+}
+
+/** Top menu on main page. Contains links for menuItem */
+.menu {
+  display: flex;
+  border-bottom: 1px solid black ;
+  background-color: rgb(99, 99, 99);
+
+}
+
+/** Items in flexbox */
+.menuItem { /** Possible links to newest article, sign in page, and idk like something uga football stat*/
+  color: white;
+  margin: 10px;
+}
+
+.intro { /**Needs image for banner or something you want as main banner. I put this img here for now. feel free to change it*/
+  background-image:url("../images/gaexample.png"); 
+  background-repeat: no-repeat;
+  background-position: 50%;
+  object-fit: cover;
+  background-color: rgb(187, 62, 62); /**Delete later*/
+  width: 100%;
+  height: 250px;
+  font-size: 1.5em;
+}
+
+.mainArticle {
+  background-color: rgb(57, 115, 192);
+  padding: 100px;
+}
+
+/**For size reshape so it doesn't look horrible*/
+@media screen and (max-width: 840px) {
+  .intro {
+      background-size: 80%;
+  }
+}
