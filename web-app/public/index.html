@@ -29,11 +29,71 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/index.css">
 
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Name of webpage-->
+    <div class="menuTitle">
+      <h1><i class='fa-solid fa-football'></i>  University of Georgia Bulldogs: Home in Athens, Georgia</h1>
+  
+  <!--Links need to be added or open components through router maybe -->
+      <h2>
+      <div class="menu">
+          <div class="menuItem">
+              2022 Statistics
+              <!-- Link: https://www.espn.com/college-football/team/stats/_/id/61/georgia-bulldogs -->
+          </div>
+          <div class="menuItem">
+              History
+              <!-- Link: https://sicemdawgs.com/uga-football-history/ -->
+          </div>
+          <div class="menuItem">Log in</div>
+      </div>
+      </h2>
+  </div>
+
+  <!--Intro banner and text abt the site-->
+  <div class="intro">
+      <h1>Welcome to our UGA Bulldog Page!</h1>
+      <p>
+          The Georgia Bulldogs is the football team for UGA. Their home is in Athens, GA with the home stadium being Sanford Stadium.  
+      </p>
+  </div>
+
+  <div id="topArticle"></div>
+
+<script type="text/babel">
+  function MainArtic() {
+      return (
+          <div class="mainArticle">
+          Main summary and Description with link for more info
+          </div>,
+          <Router>
+          <div class="mainImg">
+              <Link to="/test">
+                  <img src="/images/bulldog.jpg" alt="Bulldawg"/>
+              </Link>
+          </div>
+          </Router>
+      );
+  }
+
+  const App = () => (
+      <React.Fragment>
+      <MainArtic />
+      </React.Fragment>
+  )
+
+  ReactDOM.render(
+      <App />,
+      document.getElementById("topArticle")
+  );
+</script>
+
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
