@@ -30,7 +30,7 @@ body {
 }
 
 .intro { /**Needs image for banner or something you want as main banner. I put this img here for now. feel free to change it*/
-  background-image:url("../images/gaexample.png"); 
+  background-image:url("./images/gaexample.png"); 
   background-repeat: no-repeat;
   background-position: 50%;
   object-fit: cover;
@@ -40,6 +40,7 @@ body {
   font-size: 1.5em;
 }
 
+/**THIS IS A TEST TEST TEST TEST delete please */
 .mainArticle {
   border-radius: 10px;
   background-color: rgb(224, 215, 215);
