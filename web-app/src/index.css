@@ -18,26 +18,31 @@ a:visited {
 
 /** Webpage title of site */
 .menuTitle {
-  display: flex;
-  padding-top: 10px;
-  padding-left: 10px;
   color: black;
-  justify-content: space-between; /** puts title and menu items on opposite sides */
   border-bottom: 5px solid darkred;
 }
 
 /** Top menu on main page. Contains links for menuItem */
 .menu {
+  background-color: rgb(65, 65, 65);
   display: flex;
-  padding-top: 10px;
-  padding-right: 30px;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
 }
 
 /** Items in flexbox */
 .menuItem { /** Possible links to newest article, sign in page, and idk like something uga football stat*/
-  color: rgb(140, 140, 140);
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  background-color: white;
+  color: black;
 }
 
 .intro { /**Needs image for banner or something you want as main banner. I put this img here for now. feel free to change it*/
@@ -67,6 +72,31 @@ a:visited {
   background-color: rgb(57, 115, 192);
   padding: 100px;
 }
+
+/* nav  {
+  align-items: center;
+  background-color: rgb(65, 65, 65);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-item {
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  background-color: white;
+  color: black;
+} */
 
 /**For size reshape so it doesn't look horrible*/
 @media screen and (max-width: 840px) {

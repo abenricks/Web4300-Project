@@ -6,15 +6,22 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+
       {/*Change name of webpage*/}
-    <div class="menuTitle">Webpage Title?</div>
+    <div class="menuTitle">
+      <h1>The Dawg Blog</h1>
+    </div>
 
     {/*Links need to be added or open components through router maybe*/}
-    <div class="menu">
-        <div class="menuItem">Item1ex</div>
-        <div class="menuItem">Item2ex</div>
-        <div class="menuItem">Item3ex</div>
-    </div>
+    <nav>
+      <ul class="menu">
+        <li class="menuItem">Home</li>
+        <li class="menuItem">About</li>
+        <li class="menuItem">Football Schedule</li>
+        <li class="menuItem">Contact</li>
+        <li class="menuItem">Login</li>
+		  </ul>
+    </nav>
 
     {/*Intro banner and text about the site. With current img text looks funky but we can change this*/}
     <div class="intro">
@@ -22,7 +29,7 @@ function App() {
     </div>
 
     <div id="topArticle">
-    <div class="mainArticle">
+      <div class="mainArticle">
             Main summary and Description with link for more info. The image is also a clickable route.
             <Router>
             <div class="mainImg">
@@ -32,8 +39,7 @@ function App() {
             </div>
             </Router>
             </div>,
-
-    </div>
+      </div>
     </div>
   );
 }
