@@ -28,9 +28,9 @@ function App() {
 
     </div>
 
-    <div id="topArticle">
+    <div id="articles">
       <div class="mainArticle">
-            Main summary and Description with link for more info. The image is also a clickable route.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             <Router>
             <div class="mainImg">
                 <Link to="/test">
@@ -38,7 +38,7 @@ function App() {
                 </Link>
             </div>
             </Router>
-            </div>,
+            </div>
       </div>
     </div>
   );
