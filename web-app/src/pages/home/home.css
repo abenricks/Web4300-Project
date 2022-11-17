@@ -1,0 +1,15 @@
+#articles {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  
+  .mainArticle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: rgb(57, 115, 192);
+    padding: 70px 100px;
+  }

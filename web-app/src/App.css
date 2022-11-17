@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  margin: 0;
+  font-family: Verdana, Helvetica, sans-serif;
+}
+
+/**For size reshape so it doesn't look horrible*/
+@media screen and (max-width: 840px) {
+  .intro {
+      background-size: 80%;
+  }
+}

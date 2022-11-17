@@ -1,0 +1,31 @@
+/** Webpage title of site */
+.menuTitle {
+    color: black;
+    border-bottom: 5px solid darkred;
+    text-align: center;
+    padding: 10px 0px;
+}
+  
+  
+.intro { /**Needs image for banner or something you want as main banner. I put this img here for now. feel free to change it*/
+    background-image:url("../../images/stadium.jpg"); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: white;
+    padding-top: 10px; /** fixes spacing between top of pic and border */
+    border-bottom: 5px solid darkred;
+}
+  
+.intro h1 {
+    padding-top: 350px; /** centers text */
+    font-size: 80px;
+}
+  
+.intro p {
+    font-size: 20px;
+}

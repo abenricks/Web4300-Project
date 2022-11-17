@@ -1,0 +1,22 @@
+/** Top menu on main page. Contains links for menuItem */
+.menu {
+    background-color: rgb(65, 65, 65);
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+  }
+  
+  /** Items in flexbox */
+  .menuItem { /** Possible links to newest article, sign in page, and idk like something uga football stat*/
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .menuItem:hover {
+    background-color: white;
+    color: black;
+  }
