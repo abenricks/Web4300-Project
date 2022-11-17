@@ -7,12 +7,12 @@ export default function Topbar() {
     <div className="top">
         <ul class="menu">
             <li class="menuItem">
-              <Link to="/">
+              <Link className="link" to="/">
                 Home
               </Link>
             </li>
             <li class="menuItem">
-              <a href="https://fbschedules.com/2022-georgia-football-schedule/">
+              <a href="https://fbschedules.com/2022-georgia-football-schedule/" className="link">
                 Football Schedule
               </a>
             </li>
