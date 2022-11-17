@@ -6,7 +6,6 @@
     padding: 10px 0px;
 }
   
-  
 .intro { /**Needs image for banner or something you want as main banner. I put this img here for now. feel free to change it*/
     background-image:url("../../images/stadium.jpg"); 
     background-size: cover;
