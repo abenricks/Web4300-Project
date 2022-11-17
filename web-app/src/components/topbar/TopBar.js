@@ -2,16 +2,36 @@ import { Link } from "react-router-dom";
 import "./topbar.css";
 
 export default function Topbar() {
-  const user = true;
+  const user = false;
   return (
     <div className="top">
-        {/*Links need to be added or open components through router maybe*/}
         <ul class="menu">
-            <li class="menuItem">Home</li>
-            <li class="menuItem">About</li>
-            <li class="menuItem">Football Schedule</li>
-            <li class="menuItem">Contact</li>
-            <li class="menuItem">Login</li>
+            <li class="menuItem">
+              <Link to="/">
+                Home
+              </Link>
+            </li>
+            <li class="menuItem">
+              <a href="https://fbschedules.com/2022-georgia-football-schedule/">
+                Football Schedule
+              </a>
+            </li>
+            {!user && <li class="menuItem">
+              <Link className="link" to="/login">
+                Login
+              </Link>
+            </li>}
+            <li class="menuItem">
+              <Link className="link" to="/register">
+                Register
+              </Link>
+            </li>
+            <li class="menuItem">
+              <Link className="link" to="/write">
+                Write
+              </Link>
+            </li>
+            {user && <li className="menuItem">Logout</li>}
         </ul>
     </div>
   );
