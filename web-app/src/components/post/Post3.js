@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import "./post.css"
+import "./post3.css"
 
 export default function Post({img}) {
   return (
@@ -11,13 +11,13 @@ export default function Post({img}) {
       />
       <div className="postInfo">
         <span className="postTitle">
-            The Mascot
+            The Team
         </span>
         <hr />
         <span className="postDate">1 hour ago</span>
         <p className="postDesc">
-            The Georgia Bulldog mascot line goes all the way back to 1956. Each bulldog, named Uga,
-            stays on the sidelines during home games. 
+            The Bulldogs were crowned the 2021-2022 national champions, beating Alabama
+            33-18. This was their first national championship since 1980.
         </p>
       </div>
 

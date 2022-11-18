@@ -9,7 +9,7 @@ import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 
 function App() {
-  const currentUser = false; // This is a boolean value that will be used to determine whether or not the user is logged in. Change manually for now.
+  const currentUser = true; // This is a boolean value that will be used to determine whether or not the user is logged in. Change manually for now.
   return (
     <Router>
       <TopBar />

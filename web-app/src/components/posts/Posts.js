@@ -1,14 +1,14 @@
 import Post from "../post/Post"
+import Post2 from "../post/Post2"
+import Post3 from "../post/Post3"
 import "./posts.css"
 
 export default function Posts() {
   return (
     <div className="posts">
-        <Post img="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
-        <Post img="https://images.pexels.com/photos/6758029/pexels-photo-6758029.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
-        <Post img="https://images.pexels.com/photos/6711867/pexels-photo-6711867.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
-        <Post img="https://images.pexels.com/photos/5490778/pexels-photo-5490778.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
-        <Post img="https://images.pexels.com/photos/4916559/pexels-photo-4916559.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
+        <Post img="https://www.si.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTg2NjEyNzk3NzQyNzg2MjIy/usatsi_17485351.jpg" />
+        <Post2 img="https://upload.wikimedia.org/wikipedia/commons/d/d2/UGA_vs._Notre_Dame_2019.jpg"/>
+        <Post3 img="https://sicemdawgs.com/wp/wp-content/uploads/2022/09/UGAFB_PMc091022246-1.jpg"/>
     </div>
   )
 }
