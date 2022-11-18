@@ -20,6 +20,7 @@
     margin-left: 150px;
     display: flex;
     align-items: center;
+    padding-bottom: 50px;
   }
   
   .writeIcon {
@@ -52,8 +53,9 @@
   }
   
   .writeText {
+
     width: 70vw;
-    height: 100vh;
+    height: 60vh;
     font-family: inherit;
     font-size: 20px;
   }

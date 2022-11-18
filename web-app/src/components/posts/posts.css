@@ -7,3 +7,10 @@
     margin: 20px;
     background-color:rgb(209, 156, 156);
 }
+
+/**This is so when the screen size is smaller, the text no longer jumps off the page and scales weird*/
+@media screen and (max-width: 840px) {
+    .postDesc {
+        margin: 10px;
+    }
+}
