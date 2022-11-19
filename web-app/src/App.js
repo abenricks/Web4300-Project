@@ -30,6 +30,8 @@ function App() {
         <Route path="/write">{currentUser ? <Write /> : <Login />}</Route>
       </Switch>
     </Router>
+
+
   );
 }
 
