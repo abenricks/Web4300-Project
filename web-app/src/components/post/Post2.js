@@ -18,7 +18,7 @@ export default function Post({img}) {
         <p className="postDesc">
             Sanford Stadium is the home to the Georgia Bulldogs. With a capacity of 92,746 seats,
             each game is filled with roaring fans. After opening in 1929, Sanford Stadium is now
-            one of the largest on campus stadiums in the U.S. in college football.
+            one of the largest on campus stadiums in the U.S. in college football. For more information, click <a href="https://www.collegegridirons.com/stadiums/sanford-stadium/">here.</a>
         </p>
       </div>
 

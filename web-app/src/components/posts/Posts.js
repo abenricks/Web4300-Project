@@ -15,7 +15,7 @@ const Posts = () => {
  
       {/*{erro && <div>{erro}</div>*/}
       {isPend && <div>Loading...</div>}
-      <PostList title="test" posts={pieces} />
+      <PostList posts={pieces} />
         <Post img="https://www.si.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTg2NjEyNzk3NzQyNzg2MjIy/usatsi_17485351.jpg" />
         <Post2 img="https://upload.wikimedia.org/wikipedia/commons/d/d2/UGA_vs._Notre_Dame_2019.jpg"/>
         <Post3 img="https://sicemdawgs.com/wp/wp-content/uploads/2022/09/UGAFB_PMc091022246-1.jpg"/>
