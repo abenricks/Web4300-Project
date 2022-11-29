@@ -29,8 +29,8 @@ export default function Login() {
     <div className="login">
       <span className="loginTitle">Login</span>
       <form className="loginForm" onSubmit={handleSubm}>
-        <label>Email</label>
-        <input className="loginInput" type="text" placeholder="Enter your email..." ref={userRef}/>
+        <label>Username</label>
+        <input className="loginInput" type="text" placeholder="Enter your username..." ref={userRef}/>
         <label>Password</label>
         <input className="loginInput" type="password" placeholder="Enter your password..." ref={passRef}/>
         <button className="loginButton" type="submit" disabled={isFetch}>Login</button>
