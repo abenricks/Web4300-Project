@@ -3,7 +3,7 @@ import "./single.css"
 
 export default function Single() {
   return (
-    <div classname="single">
+    <div className="single">
       <SinglePost/>
     </div>
   )

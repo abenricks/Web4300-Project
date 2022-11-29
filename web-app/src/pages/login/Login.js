@@ -17,9 +17,9 @@ export default function Login() {
     try{
       const res = await axios.post("/auth/login", {
         username: userRef.current.value,
-        password: userRef.current.value,
+        password: passRef.current.value,
       })
-      dis({type:"LOGIN_SUCCESS",payload: res.data});
+      dis({type:"LOGIN_SUCCESS", payload: res.data});
     } catch (err) {
       dis({type:"LOGIN_FAILURE"});
     }

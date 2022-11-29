@@ -1,12 +1,14 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../../context/Context";
 import "./topbar.css";
 
 export default function Topbar() {
-  const user = false;
+  const {user} = useContext(Context);
   return (
     <div className="top">
         <ul class="menu">
-            <li class="menuItem">
+            <li className="menuItem">
               <Link className="link" to="/">
                 Home
               </Link>
