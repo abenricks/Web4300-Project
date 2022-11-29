@@ -4,7 +4,11 @@ import { Context } from "../../context/Context";
 import "./topbar.css";
 
 export default function Topbar() {
-  const {user} = useContext(Context);
+  const {user, dis} = useContext(Context);
+  const handleLogout = () => {
+    dis({type: "LOGOUT"});
+  }
+
   return (
     <div className="top">
         <ul class="menu">
@@ -33,7 +37,7 @@ export default function Topbar() {
                 Write
               </Link>
             </li>
-            {user && <li className="menuItem">Logout</li>}
+            {user && <li className="menuItem" onClick={handleLogout}>Logout</li>}
         </ul>
     </div>
   );
