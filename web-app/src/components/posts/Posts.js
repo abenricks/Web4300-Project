@@ -8,7 +8,7 @@ const Posts = ({posts}) => {
       {posts.map(p=> (
         <Post post={p} />
       ))}
-    </div>
+    </div> 
   )
 }
 
