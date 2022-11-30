@@ -1,52 +1,52 @@
 import "./write.css"
+import axios from "axios";
+import {Context} from "../../context/Context";
+import { useContext } from "react";
 import {useState } from 'react';
 import {useHistory} from 'react-router-dom';
 
 const Write = () => {
-  const [title, setTitle] = useState('');
-  const [text, setText] = useState('');
+  const [title, setTitle] = useState("");
+  const [desc, setDesc] = useState("");
+  const [photo, setPhoto] = useState("");
+  const {user} = useContext(Context);
   const [isPend, setIsPend] = useState(false);
-  const history = useHistory();
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
-    const piece = { title, text};
+    const piece = {title, desc, photo, username:user.username};
     setIsPend(true);
 
-    fetch('http://localhost:5000/posts', {
-      method: 'POST',
-      headers: {  "Content-Type": "application/json" },
-      body: JSON.stringify(piece)
-    }).then (() => {
-      setIsPend(false);
-      history.goBack();
-    })
+    try {
+      const res = await axios.post("/posts", piece);
+      window.location.replace("/post/" + res.data._id);
+    }
+    catch (err) {
+      console.log(err);
+    }
   }
-
-
 
     return (
         <div className="write">
-          <img
-            className="writeImg"
-            src="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-            alt="" 
-          />
-          <form  onSubmit={onSubmit}>
+          <form className="writeForm" onSubmit={onSubmit}>
             <div className="writeFormGroup">
-              <label htmlFor="fileInput">
-                <i className="writeIcon fas fa-plus"></i>
-              </label>
-              <div className="insert">Upload a picture to post</div>
-              <input id="fileInput" type="file" style={{ display: "none" }} />
               <input
                 className="writeInput"
                 placeholder="Title"
                 type="text"
                 required
                 autoFocus={true}
-                value={title}
                 onChange={(e) => setTitle(e.target.value)}
+              />
+            </div>
+            <div className="writeFormGroup">
+              <input
+                className="writeInput"
+                placeholder="Enter URL for image..."
+                type="text"
+                required
+                autoFocus={true}
+                onChange={(e) => setPhoto(e.target.value)}
               />
             </div>
             <div className="writeFormGroup">
@@ -54,12 +54,11 @@ const Write = () => {
                 className="writeInput writeText"
                 placeholder="Write your blog post..."
                 type="text"
-                value={text}
-                onChange={(e) => setText(e.target.value)}
+                onChange={(e) => setDesc(e.target.value)}
                 autoFocus={true}
               />
             </div>
-            {!isPend && <button className="writeSubmit">Add Post</button>}
+            {!isPend && <button className="writeSubmit" type="submit">Add Post</button>}
             {isPend && <button disabled className="writeSubmit">Adding Post!</button>}
           </form>
         </div>

@@ -1,9 +1,9 @@
-.singlePost {
-    
+  .singlePost {
+    background-color:rgb(209, 156, 156);
   }
   
   .singlePostWrapper {
-    padding: 20px;
+    padding: 50px;
   }
   
   .singlePostImg {
@@ -42,7 +42,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 16px;
-    color: #be9656;
+    color: #666;
     font-family: "Varela Round", Arial, Helvetica, sans-serif;
   }
   
