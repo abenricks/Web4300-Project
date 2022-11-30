@@ -13,17 +13,19 @@ const Write = () => {
   const [isPend, setIsPend] = useState(false);
 
   const onSubmit = async (e) => {
-    e.preventDefault();
-    const piece = {title, desc, photo, username:user.username};
-    setIsPend(true);
+    if (user.username === "selma") { // checks if user is authorized 
+      e.preventDefault();
+      const piece = {title, desc, photo, username:user.username};
+      setIsPend(true);
 
-    try {
-      const res = await axios.post("/posts", piece);
-      window.location.replace("/post/" + res.data._id);
-    }
-    catch (err) {
-      console.log(err);
-    }
+      try {
+        const res = await axios.post("/posts", piece);
+        window.location.replace("/post/" + res.data._id);
+      }
+      catch (err) {
+        console.log(err);
+      }
+    } 
   }
 
     return (

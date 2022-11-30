@@ -40,7 +40,7 @@ useEffect (() => {
       await axios.put(`/posts/${post._id}`, {
         username:user.username, title:title, desc:desc,
       });
-      setUpdate(false)
+      window.location.reload();
     } catch (err) {}
   }
 
