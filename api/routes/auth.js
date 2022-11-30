@@ -2,6 +2,10 @@ const router = require('express').Router();
 const User = require('../models/User');
 const bcrypt = require('bcrypt');
 
+  const showAlert = () => {
+    alert("Hello world!");
+  }
+
 // Register
 router.post('/register', async (req, res) => {
     try {
@@ -25,10 +29,14 @@ router.post('/register', async (req, res) => {
 router.post('/login', async (req, res) => {
     try {
         const user = await User.findOne({username: req.body.username}) //since usernames must be unique, findOne will get the given username
-        if(!user) return res.status(400).json("Wrong credentials!"); // if user is not found, return error
+        if(!user) {
+            return res.status(400).json("Wrong credentials!"); // if user is not found, return error
+        }
 
         const validate = await bcrypt.compare(req.body.password, user.password); //decrypt password and compare to user.password
-        if(!validate) return res.status(400).json("Wrong credentials!"); // if password is not valid, return error
+        if(!validate) {
+            return res.status(400).json("Wrong credentials!"); // if password is not valid, return error
+        }
 
         const {password, ...others} = user._doc; //remove password from user object
         res.status(200).json(others); // if user is found and password is valid, return user

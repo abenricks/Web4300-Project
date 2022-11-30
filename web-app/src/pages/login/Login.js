@@ -22,6 +22,7 @@ export default function Login() {
       dis({type:"LOGIN_SUCCESS", payload: res.data});
     } catch (err) {
       dis({type:"LOGIN_FAILURE"});
+      alert("Wrong credentials!");
     }
   };
 
