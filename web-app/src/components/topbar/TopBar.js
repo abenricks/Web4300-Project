@@ -27,11 +27,12 @@ export default function Topbar() {
                 Login
               </Link>
             </li>}
-            <li class="menuItem">
+            {!user && <li class="menuItem">
               <Link className="link" to="/register">
                 Register
               </Link>
             </li>
+            }
             <li class="menuItem">
               <Link className="link" to="/write">
                 Write
