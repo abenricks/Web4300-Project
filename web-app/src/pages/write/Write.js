@@ -13,7 +13,6 @@ const Write = () => {
   const [isPend, setIsPend] = useState(false);
 
   const onSubmit = async (e) => {
-    if (user.username === "selma") { // checks if user is authorized 
       e.preventDefault();
       const piece = {title, desc, photo, username:user.username};
       setIsPend(true);
@@ -25,7 +24,6 @@ const Write = () => {
       catch (err) {
         console.log(err);
       }
-    } 
   }
 
     return (
