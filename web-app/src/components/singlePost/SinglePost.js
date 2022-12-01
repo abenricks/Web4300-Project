@@ -32,7 +32,9 @@ useEffect (() => {
         data: {username:user.username},
       });
       window.location.replace("/");
-    } catch (err) {}
+    } catch (err) {
+      alert("You are not authorized to delete!");
+    }
   };
 
   const handleUpdate = async ()=>{
@@ -41,7 +43,9 @@ useEffect (() => {
         username:user.username, title:title, desc:desc,
       });
       window.location.reload();
-    } catch (err) {}
+    } catch (err) {
+      alert("You are not authorized to update!");
+    }
   }
 
   return (
